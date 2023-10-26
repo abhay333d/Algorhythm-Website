@@ -123,7 +123,7 @@ nav #close{
 }
 .about .container .image{
     flex-basis: 50%;
-    background: url(./images/background.jpg);
+    background: url(./images/1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     padding: 16rem 0;
@@ -154,4 +154,80 @@ nav #close{
     color: var(--black);
     line-height: 1.5;
 }
+.heading{
+    font-size: 5rem;
+    text-align: center;
+}
+.heading span{
+    color: var(--font-heading);
+}
+.heading-description{
+    text-align: center;
+    padding: 1.3rem 0;
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+.events .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(28rem, 1fr));
+    gap:2rem;
+    padding: 2.5rem 0;
+}
+.events .container .post{
+    border: 0.2rem solid var(--bg);
+    border-radius: 10px;
+    height: auto;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 0px --bg;
+    transition: 0.4s linear all;
+}
+.events .container .post:hover{
+    transform: translate(0px , -5px);
+}
+.events .container .post .events-img{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+.events .container .post .events-img img{
+    width: 100%;
+    height: auto;
+}
 
+.events .container .post .events-content{
+    padding: 2rem;
+}
+.events .container .post .events-content h3{
+    font-size: 1.6rem;
+    padding: 1.3rem 0;
+    letter-spacing: 0.1rem;
+}
+.events .container .post .events-content h3 span{
+    color: var(--bg);
+}
+.events .container .post .events-content h1{
+    font-size: 2rem;
+    color: var(--black);
+    padding-bottom: 2rem;
+}
+.events .container .post .events-content p{
+    font-size: 1.4rem;
+    color: var(--para-font);
+}
+.events .container .post:hover img{
+    transform: scale(1.1);
+}
+.events .container .post .events-img span{
+    position: absolute;
+    background-color: var(--bg);
+    bottom: 5%;
+    right: 5%;
+    padding: 1.2rem 1.4rem;
+    clear: var(--white);
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+}
