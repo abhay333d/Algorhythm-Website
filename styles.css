@@ -333,6 +333,48 @@ nav #close{
 
 
 
+.contact .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem , 1fr));
+    gap: 2rem;
+    padding: 2.5rem 0;
+}
+.contact .container .contact-box{
+    border: 0.2rem solid var(--bg);
+    border-radius: 1rem;
+    padding: 2rem;
+    cursor: pointer;
+}
+
+.contact .container .contact-box div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3rem 0;
+}
+.contact .container .contact-box div i{
+    width: 4rem;
+    height: 4rem;
+    background: var(--bg);
+    color : var(--white);
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 4rem;
+    border-radius: 100%;
+}
+.contact .container .contact-box div h2 {
+    font-size: 1.8rem;
+}
+.contact .container .contact-box div h2 span{
+    font-weight: 300;
+}
+.contact .container .contact-box div p{
+    font-size: 1.5rem;
+}
+.contact .container .contact-box:hover{
+    background: #686a6f;
+    color: var(--white);
+}
 
 
 
