@@ -231,3 +231,110 @@ nav #close{
     font-weight: bold;
     border-radius: 5px;
 }
+.events-held .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(28rem, 1fr));
+    gap:  2rem;
+    padding: 2.5rem 0;
+    grid-row-gap: 4rem;
+
+}
+.events-held .container .event-box{
+    background: var(--white);
+    height: auto;
+    cursor: pointer;
+    box-shadow: 3px 3px 10px rgba(179,179,179,0.2);
+    padding-bottom: 3rem;
+    border-radius: 10px;
+}
+.events-held .container .event-box img{
+    width: 100%;
+    border-radius: 10px;
+}
+.events-held .container .event-box .event-content{
+    padding: 1.5rem;
+}
+.events-held .container .event-box h3{
+    font-size: 2.5rem;
+    padding: 1.3rem 0;
+}
+.events-held .container .event-box p{
+    font-size: 1.6rem;
+    padding: 1.3rem 0;
+    font-weight: 400;
+    color: var(--black);
+}
+.events-held .container .event-box:hover{
+    transform: translateY(-1rem);
+}
+.team .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem , 1fr));
+    gap: 2rem;
+    padding: 2.5rem 0;
+
+}
+.team .container .team-box{
+    width: auto;
+}
+.team .container .team-box .team-img{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 1rem;
+    transition: all linear 0.5s;
+}
+.team .container .team-box .team-img:hover{
+    box-shadow: 0px 0px 10px 0px red;
+}
+.team .container .team-box .team-img img{
+    width: 100%;
+    cursor: pointer;
+}
+.team .container .team-box .team-img:hover img{
+    transform: scale(1.1);
+}
+.team .container .team-box .team-content{
+    box-shadow: 3px 3px 10px rgba(179,179,179,0.2);
+    text-align: center;
+    width: 80%;
+    position: relative;
+    top: -10%;
+    z-index: 2;
+    background: var(--white);
+    left: 10%;
+    border-radius: 0.8rem;
+}
+.team .container .team-box .team-content h3{
+    font-size: 2rem;
+    color: var(--black);
+    padding: 1.2rem 0;
+}
+.team .container .team-box .team-content p{
+    font-size: 1.5rem;
+    padding: 1.2rem 0;
+}
+.team .container .team-box .team-content .social a{
+    display: inline-block;
+    margin: 0.7rem;
+    width: 4rem;
+    height: 4rem;
+    background: var(--bg);
+    color: var(--white);
+    line-height: 4rem;
+    font-size: 1.5rem;
+}
+.team .container .team-box .team-content .social a:hover {
+    border-radius: 100%;
+}
+.team .container .team-box:hover .team-content{
+    transform: translateY(-1rem);
+}
+
+
+
+
+
+
+
+
