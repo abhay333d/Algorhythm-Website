@@ -9,7 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'poppins', 'sans-serif' , 'Robot';
+    font-family: 'Robot', sans-serif;
     outline: none;
     border: none;
     text-decoration: none;
@@ -116,6 +116,10 @@ nav #close{
     background: var(--bg);
     color: var(--white);
     transform: translate(0px, -3px);
+}
+
+.nav-change{
+    background: rgba(0, 0, 0, 0.7);
 }
 .about .container{
     display: flex;
@@ -375,6 +379,105 @@ nav #close{
     background: #686a6f;
     color: var(--white);
 }
+
+.footer {
+    width: 100%;
+    height: auto;
+    background: url(./images/6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20rem;
+}
+.footer .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem , 1fr));
+    gap: 2rem;
+    padding: 2.5rem 0;
+}
+.footer .container .footer-box {
+    padding: 1rem;
+}
+.footer .container .footer-box h3{
+    color: var(--white);
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+}
+.footer .container .footer-box p{
+    color: var(--white);
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-weight: 400;
+    padding: 1.2rem 0;
+}
+.footer .container .footer-box form input{
+    width: 70%;
+    padding: 1rem;
+}
+.footer .container .footer-box p a{
+    color: var(--bg);
+}
+.footer .container .footer-box form button{
+    background: var(--bg);
+    color: var(--white);
+    padding: 1rem;
+    cursor: pointer;
+}
+.footer .container .footer-box div a {
+    margin: 0.5rem;
+    color: var(--white);
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    background: var(--bg);
+}
+
+@media only screen and (max-width: 991px) {
+    html{
+        font-size: 55%;
+    }
+    nav{
+        padding: 3rem 3rem;
+    }
+    .content{
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 768px){
+    nav #menu-btn{
+        display: inline-block;
+    }
+    nav .links {
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        background: #eee;
+        transition: 0.5s;
+        background: black;
+    }
+    nav .links a {
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--white);
+        text-align: center;
+    }
+    .about .container{
+        flex-direction: column;
+    }
+    .about .container.about-content{
+        text-align: center;
+    }
+    
+}
+
+
+
 
 
 
