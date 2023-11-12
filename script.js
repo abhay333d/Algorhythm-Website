@@ -30,3 +30,15 @@ function change (){
 }
 
 window.addEventListener("scroll",change);
+
+
+
+
+
+h1obj = document.getElementsByClassName("edit");
+function popup(){
+    h1obj[0].innerHTML = "Institution of Electronics and Telecomunication Engineering."
+}
+function reset(){
+    h1obj[0].innerHTML="IETE"
+}
