@@ -194,7 +194,7 @@ nav #close{
     height: auto;
     cursor: pointer;
     box-shadow: 0px 0px 5px 0px --bg;
-    transition: 0.4s linear all;
+    transition: 0.4s linear all ease-in-out;
 }
 .events .container .post:hover{
     transform: translate(0px , -5px);
